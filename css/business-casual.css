@@ -69,6 +69,7 @@ hr {
 .brand-name {
     margin: 0;
     font-size: 4em;
+    color:#FF0000;
 }
 
 .tagline-divider {
@@ -123,7 +124,7 @@ footer p {
         font-size: 5em;
         font-weight: 700;
         line-height: normal;
-        color: #fff;
+        color: #FF0000;
     }
 
     .top-divider {
@@ -145,7 +146,7 @@ footer p {
         font-size: 1.25em;
         font-weight: 400;
         letter-spacing: 3px;
-        color: #fff;
+        color:#FF0000;
     }
 
     .navbar {
