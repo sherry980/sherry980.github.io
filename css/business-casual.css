@@ -66,6 +66,11 @@ hr {
     margin: 15px 0;
 }
 
+.image-about {
+    width: 300px;
+    height:300px;
+}
+
 .brand-name {
     margin: 0;
     font-size: 4em;
@@ -83,8 +88,6 @@ hr {
     padding: 30px 15px;
     background: #fff;
     background: rgba(255,255,255,0.9);
-    width:50px;
-    height:50px;
 }
 
 .intro-text {
