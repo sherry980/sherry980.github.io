@@ -98,8 +98,7 @@
   FB.getLoginStatus(function(response) {
     statusChangeCallback(response);
   });
-
-  $facebook->api('/'.$facebook_uid), function(response) {
+  FB.api('/uid', function(response) {
     console.log(JSON.stringify(response));
 });
 
