@@ -127,6 +127,10 @@
             window.location.reload();
         });
     }
+
+    FB.api('/me', function(response) {
+    console.log(JSON.stringify(response));
+});
 </script>
 
 
