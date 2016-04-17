@@ -98,9 +98,7 @@
   FB.getLoginStatus(function(response) {
     statusChangeCallback(response);
   });
-  FB.api('/uid', function(response) {
-    console.log(JSON.stringify(response));
-});
+ 
 
   };
 
@@ -130,7 +128,6 @@
             window.location.reload();
         });
     }
- 
 
 
 
@@ -294,6 +291,14 @@
     $('.carousel').carousel({
         interval: 5000 //changes the speed
     })
+
+    window.fbAsyncInit = function() {
+
+ FB.api('/me', function(response) {
+    console.log(JSON.stringify(response));
+});
+
+};
 
 
     </script>
