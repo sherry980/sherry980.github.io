@@ -100,14 +100,14 @@
   FB.getLoginStatus(function(response) {
     statusChangeCallback(response);
     if (response.status === 'connected') {
-    var accessToken = response.authResponse.accessToken;
-    console.log("accessToken");
+        FB.api('/me', function(response) {
+    console.log(JSON.stringify(response));
+});
+
   } 
   });
 
-  FB.api('/me', function(response) {
-    console.log(JSON.stringify(response));
-});
+  
  
 
   };
