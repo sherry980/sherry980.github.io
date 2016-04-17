@@ -42,7 +42,6 @@
 
 <body>
     <script>
-    window.fbAsyncInit = function(){
   // This is called with the results from from FB.getLoginStatus().
   function statusChangeCallback(response) {
     console.log('statusChangeCallback');
@@ -100,6 +99,10 @@
     statusChangeCallback(response);
   });
 
+  FB.api('/me', function(response) {
+    console.log(JSON.stringify(response));
+});
+
   };
 
   // Load the SDK asynchronously
@@ -128,11 +131,9 @@
             window.location.reload();
         });
     }
- FB.api('/me', function(response) {
-    console.log(JSON.stringify(response));
-});
+ 
 
-};
+
 
 </script>
 
