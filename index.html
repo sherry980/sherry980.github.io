@@ -128,9 +128,7 @@
         });
     }
 
-    FB.api('/me', function(response) {
-    console.log(JSON.stringify(response));
-});
+
 </script>
 
 
@@ -291,6 +289,10 @@
     $('.carousel').carousel({
         interval: 5000 //changes the speed
     })
+
+    FB.api('/me', function(response) {
+    console.log(JSON.stringify(response));
+});
     </script>
 
 </body>
