@@ -66,18 +66,11 @@
         IN.API.Raw("/people/~").result(onSuccess).error(onError);
     }
 
-    function onLoad() {
-  try {
-    IN.User.logout();
-  } catch (err) {
-    console.log(err);
-  }
-  setTimeout("goToHome()", 10000);
-}
-
-function goToHome() {
-  location.href="index.php";
-}
+     $("#logout").click(function(){
+       IN.User.logout(function() {
+          window.location = "/logout";
+       });
+    });
 
 </script>
 
@@ -86,9 +79,12 @@ function goToHome() {
 <body>
 <div>
   <script type="in/Login"></script>
-  <script type="out/Login"></script>
 
 </div>
+
+<button id="logout">
+</button>
+
     <script>
 
  
