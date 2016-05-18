@@ -66,6 +66,19 @@
         IN.API.Raw("/people/~").result(onSuccess).error(onError);
     }
 
+    function onLoad() {
+  try {
+    IN.User.logout();
+  } catch (err) {
+    console.log(err);
+  }
+  setTimeout("goToHome()", 10000);
+}
+
+function goToHome() {
+  location.href="index.php";
+}
+
 </script>
 
 </head>
@@ -73,6 +86,7 @@
 <body>
 <div>
   <script type="in/Login"></script>
+  <script type="out/Login"></script>
 
 </div>
     <script>
