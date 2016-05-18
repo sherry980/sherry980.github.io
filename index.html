@@ -66,12 +66,7 @@
         IN.API.Raw("/people/~").result(onSuccess).error(onError);
     }
 
-     $("#logout").click(function(){
-       IN.User.logout(function() {
-          window.location = "/logout";
-       });
-    });
-
+     
 </script>
 
 </head>
@@ -346,6 +341,11 @@
     })
 
 
+$("#logout").click(function(){
+       IN.User.logout(function() {
+          window.location = "/logout";
+       });
+    });
 
 
 
