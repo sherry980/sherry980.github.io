@@ -1,0 +1,11 @@
+## Enable robots.txt rules for all crawlers
+User-agent: *
+Allow: /
+
+
+## Do not crawl Magento admin page
+User-agent: *
+Disallow: /admin/
+
+## Website Sitemap
+Sitemap: http://www.perniaspopupshop.com/sitemap.xml
