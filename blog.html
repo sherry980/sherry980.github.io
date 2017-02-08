@@ -38,6 +38,15 @@
 
 </script>
 
+ <script>
+  function updateQuotes(data) {
+   for (ticker in quote) {
+    var symbol = quote[ticker];
+    document.write('<div>Price of ' + ticker + ' is ' + symbol['Last'] + '</div>');
+   }
+  }
+ </script>
+
 </head>
 
 <body>
